@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Athena Masajes | Masajes terapéuticos con Daiana</title>
+  <meta name="description" content="Reserva masajes relajantes, descontracturantes y deportivos con Daiana en Oropesa del Mar. +4 años de experiencia. ¡Bienestar garantizado!">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Athena Masajes con Daiana">
+  <meta property="og:description" content="Masajes terapéuticos y relajantes con Daiana. Reserva fácil por WhatsApp.">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Athena+Masajes+Daiana">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Google Fonts & AOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <style>
+    :root { --bg:#D7BFAE;--surface:#F5E8E0;--accent:#7D4C3C;--text:#3E2A24;--muted:#5C4033;--radius:8px;--transition:.3s ease; }
+    html,body{margin:0;padding:0;overflow-x:hidden;font-family:'Poppins',sans-serif;background:var(--bg);color:var(--text);}
+    *,*::before,*::after{box-sizing:border-box;}
+    .container{max-width:1000px;margin:0 auto;padding:0 1rem;}
+    header{background:var(--surface);position:sticky;top:0;box-shadow:0 2px 8px rgba(0,0,0,0.1);z-index:100;}
+    .header-container{display:flex;align-items:center;justify-content:space-between;height:4rem;}
+    .logo{font-family:'Lora',serif;font-size:1.75rem;color:var(--accent);}
+    nav ul{list-style:none;display:flex;gap:1rem;}
+    nav a{color:var(--muted);text-decoration:none;font-weight:500;transition:color var(--transition);}
+    nav a:hover{color:var(--accent);}
+    .hero{position:relative;text-align:center;padding:6rem 0;}
+    .hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;background:url('https://via.placeholder.com/1200x800?text=Spa+Serenity')center/cover no-repeat;filter:brightness(0.4);z-index:0;}
+    .hero-content{position:relative;z-index:1;}
+    .hero h2{font-family:'Lora',serif;font-size:2.75rem;color:#fff;margin-bottom:1rem;animation:fadeIn 1s forwards;opacity:0;}
+    .hero p{font-size:1.125rem;color:#fff;margin-bottom:2rem;animation:fadeIn 1s .5s forwards;opacity:0;}
+    .btn-primary{background:var(--accent);color:#fff;padding:.75rem 2rem;border:none;border-radius:var(--radius);cursor:pointer;animation:fadeIn 1s 1s forwards;opacity:0;transition:transform var(--transition);}
+    .btn-primary:hover{transform:scale(1.05);}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    section{padding:4rem 0;}
+    .section-heading{font-family:'Lora',serif;font-size:2rem;color:var(--accent);text-align:center;margin-bottom:1.5rem;}
+    .section p,.section ul{color:var(--muted);text-align:center;margin-bottom:2rem;}
+    .services-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
+    .service-card{background:var(--surface);padding:1.5rem;border-radius:var(--radius);text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);transition:transform var(--transition);}
+    .service-card:hover{transform:translateY(-5px);}
+    .service-card h3{font-family:'Lora',serif;color:var(--accent);margin-bottom:.5rem;}
+    .service-card img{width:100%;height:auto;border-radius:var(--radius);margin-bottom:0.75rem;}
+    .service-card p{font-size:.95rem;color:var(--muted);margin-bottom:0.5rem;}
+    .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;max-width:800px;margin:0 auto;}
+    .card{background:var(--surface);padding:1.5rem;border-radius:var(--radius);text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.05);}
+    .card h3{font-family:'Lora',serif;color:var(--accent);margin-bottom:.5rem;}
+    .card p{font-size:1.125rem;color:var(--text);}
+    details{max-width:800px;margin:1rem auto;}
+    summary{font-weight:600;cursor:pointer;color:var(--accent);}
+    .review-card{background:var(--surface);padding:1rem;border-radius:var(--radius);box-shadow:0 2px 8px rgba(0,0,0,0.05);margin-bottom:1rem;}
+    .review-card h4{margin:0 0 0.5rem;color:var(--accent);font-family:'Lora',serif;}
+    .review-card p{margin:0;color:var(--muted);font-size:.95rem;}
+    footer{background:var(--surface);text-align:center;padding:2rem 0;color:var(--muted);font-size:.875rem;}
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <div class="container header-container">
+      <div class="logo">Athena Masajes</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Sobre Daiana</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#pricing">Precios</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#reviews">Reseñas</a></li>
+          <li><a href="#contact">Reserva</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" data-aos="zoom-in">
+      <div class="hero-bg"></div>
+      <div class="hero-content container">
+        <h2>Descubre el Placer de Cuidarte con Daiana</h2>
+        <p>Vive un momento único de relajación y renovación total. Servicios disponibles para mujeres y hombres.</p>
+        <button class="btn-primary" onclick="scrollToSection('#contact')">Reserva ahora</button>
+      </div>
+    </section>
+
+    <section id="about" class="section" data-aos="fade-up">
+      <div class="container">
+        <div class="campfire">🔥</div>
+        <h2 class="section-heading">Sobre Daiana</h2>
+        <p>+4 años de experiencia ofreciendo masajes terapéuticos y relajantes con pasión y técnica personalizada.</p>
+        <p>Ubicación: Castellón, Oropesa del Mar.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-heading">Nuestros Servicios</h2>
+        <div class="services-list">
+          <div class="service-card">
+            <img src="https://via.placeholder.com/300x200?text=Masaje+Relajante" alt="Masaje Relajante">
+            <h3>Masaje Relajante</h3>
+            <p>Calma estrés y tensión con movimientos suaves.</p>
+          </div>
+          <div class="service-card">
+            <img src="https://via.placeholder.com/300x200?text=Piernas+Cansadas" alt="Piernas Cansadas">
+            <h3>Piernas Cansadas</h3>
+            <p>Ligereza inmediata en tus piernas.</p>
+          </div>
+          <div class="service-card">
+            <img src="https://via.placeholder.com/300x200?text=Facial+y+Craneal" alt="Masaje Facial y Craneal">
+            <h3>Masaje Facial y Craneal</h3>
+            <p>Relaja cabeza y rostro, mejora la circulación.</p>
+          </div>
+          <div class="service-card">
+            <img src="https://via.placeholder.com/300x200?text=Tejido+Profundo" alt="Masaje Tejido Profundo">
+            <h3>Masaje Tejido Profundo</h3>
+            <p>Alivio de contracturas intensas.</p>
+          </div>
+          <div class="service-card">
+            <img src="https://via.placeholder.com/300x200?text=Masaje+Terapeutico" alt="Masaje Terapeutico">
+            <h3>Masaje Terapéutico</h3>
+            <p>Enfocado en recuperación y tratamiento de lesiones.</p>
+          </div>
+          <div class="service-card">
+            <img src="https://via.placeholder.com/300x200?text=Masaje+Deportivo" alt="Masaje Deportivo">
+            <h3>Masaje Deportivo</h3>
+            <p>Recupera energía y rendimiento.</p>
+          </div>
+          <div class="service-card">
+            <img src="https://via.placeholder.com/300x200?text=Tratamientos+Corporales" alt="Tratamientos Corporales">
+            <h3>Tratamientos Corporales</h3>
+            <p>Maderoterapia + drenaje linfático + masaje reductor manual.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section bg-light" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-heading">Precios</h2>
+        <div class="pricing-grid">
+          <div class="card"><h3>Masaje Relajante</h3><p>€30</p></div>
+          <div class="card"><h3>Piernas Cansadas</h3><p>€30</p></div>
+          <div class="card"><h3>Masaje Facial y Craneal</h3><p>€30</p></div>
+          <div class="card"><h3>Masaje Tejido Profundo</h3><p>€40</p></div>
+          <div class="card"><h3>Masaje Terapéutico</h3><p>€40</p></div>
+          <div class="card"><h3>Masaje Deportivo</h3><p>€40</p></div>
+          <div class="card"><h3>Tratamientos Corporales</h3><p>€35</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-heading">Preguntas Frecuentes</h2>
+        <details>
+          <summary>¿Cómo reservo una sesión?</summary>
+          <p>Selecciona tu servicio, fecha y, al enviar el formulario, serás redirigido a WhatsApp para confirmar hora y detalles.</p>
+        </details>
+        <details>
+          <summary>¿Puedo cancelar o cambiar mi cita?</summary>
+          <p>Contáctame con al menos 24 horas de antelación por WhatsApp para modificar o cancelar tu cita sin coste.</p>
+        </details>
+        <details>
+          <summary>¿Es apto para embarazadas?</summary>
+          <p>Algunos masajes son seguros, pero es necesario indicarlo al reservar. Pregunta sin compromiso.</p>
+        </details>
+        <details>
+          <summary>¿Aceptan ambos géneros?</summary>
+          <p>Sí, ofrezco masajes tanto a mujeres como a hombres.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="reviews" class="section bg-light" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-heading">Reseñas</h2>
+        <div id="reviews-list"></div>
+        <form id="review-form" class="container" style="max-width:600px;">
+          <div class="form-group">
+            <label for="review-name">Nombre</label>
+            <input type="text" id="review-name" required style="width:100%;padding:.75rem;border:1px solid #ddd;border-radius:var(--radius);" />
+          </div>
+          <div class="form-group">
+            <label for="review-comment">Tu opinión</label>
+            <textarea id="review-comment" rows="3" required style="width:100%;padding:.75rem;border:1px solid #ddd;border-radius:var(--radius);"></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="display:block;margin:0 auto;">Enviar reseña</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-heading">Reserva tu Sesión</h2>
+        <form id="booking-form" class="container" style="max-width:400px;margin:0 auto;">
+          <div class="form-group"><label for="massage-type">Servicio</label><select id="massage-type" required style="width:100%;padding:.75rem;border:1px solid #ddd;border-radius:var(--radius);">
+            <option value="Masaje Relajante">Masaje Relajante</option>
+            <option value="Piernas Cansadas">Piernas Cansadas</option>
+            <option value="Masaje Facial y Craneal">Masaje Facial y Craneal</option>
+            <option value="Masaje Tejido Profundo">Masaje Tejido Profundo</option>
+            <option value="Masaje Terapéutico">Masaje Terapéutico</option>
+            <option value="Masaje Deportivo">Masaje Deportivo</option>
+            <option value="Tratamientos Corporales">Tratamientos Corporales</option>
+          </select></div>
+          <div class="form-group"><label for="duration">Duración</label><select id="duration" required style="width:100%;padding:.75rem;border:1px solid #ddd;border-radius:var(--radius);">
+            <option value="50 minutos">50 minutos</option>
+            <option value="90 minutos">90 minutos</option>
+          </select></div>
+          <div class="form-group"><label for="massage-date">Fecha</label><input type="date" id="massage-date" required style="width:100%;padding:.75rem;border:1px solid #ddd;border-radius:var(--radius);" /></div>
+          <button type="submit" class="btn-primary" style="width:100%;">Enviar</button>
+        </form>
+        <p style="text-align:center;margin-top:1rem;color:var(--text);">Formas de pago: Efectivo | Transferencias online (Bizum, etc.)</p>
+        <p style="text-align:center;margin-top:0.5rem;color:var(--text);">Contacto WhatsApp: +34 617 14 51 97</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Athena Masajes con Daiana</p>
+      <p>Ubicación: Castellón, Oropesa del Mar</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      const dateInput=document.getElementById('massage-date');
+      const today=new Date().toISOString().split('T')[0];
+      const max=new Date(new Date().setMonth(new Date().getMonth()+2)).toISOString().split('T')[0];
+      dateInput.min=today; dateInput.max=max;
+      AOS.init({duration:800,once:true});
+
+      // Load and render reviews from localStorage
+      const reviewsList = document.getElementById('reviews-list');
+      let reviews = JSON.parse(localStorage.getItem('athenareviews') || '[]');
+      function renderReviews(){ reviewsList.innerHTML = ''; reviews.forEach(r => {
+        const div = document.createElement('div'); div.className = 'review-card';
+        div.innerHTML = `<h4>${r.name}</h4><p>${r.comment}</p>`;
+        reviewsList.appendChild(div);
+      }); }
+      renderReviews();
+
+      // Handle review form
+      document.getElementById('review-form').addEventListener('submit', e=>{
+        e.preventDefault();
+        const name = document.getElementById('review-name').value.trim();
+        const comment = document.getElementById('review-comment').value.trim();
+        if(name && comment){ reviews.push({name,comment}); localStorage.setItem('athenareviews', JSON.stringify(reviews)); renderReviews(); e.target.reset(); }
+      });
+    });
+
+    const daianaNumber='34617145197';
+    document.getElementById('booking-form').addEventListener('submit',e=>{
+      e.preventDefault();
+      const type=document.getElementById('massage-type').value;
+      const dur=document.getElementById('duration').value;
+      const date=document.getElementById('massage-date').value;
+      const msg=`Hola, vengo de Athena Masajes. Quisiera ${type} (${dur}) para el ${date}. ¿Qué hora tienen?`;
+      window.location.href=`https://wa.me/${daianaNumber}?text=${encodeURIComponent(msg)}`;
+    });
+    function scrollToSection(i){document.querySelector(i).scrollIntoView({behavior:'smooth'});}  
+  </script>
+</body>
+</html>
